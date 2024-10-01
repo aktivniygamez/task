@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+
+  h1 {
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__back {
+    position: absolute;
+    left: 0;
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #4e46b4;
+    }
+  }
+}
+
+.input {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 20px;
+
+  p {
+    text-align: left;
+    padding: 20px 0 0 20px;
+    font-size: 0.9rem;
+    color: grey;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    color: #595d62;
+
+    &-password {
+      padding-left: 20px;
+      font-size: 20px;
+      width: 250px;
+      border: none;
+      background-color: transparent;
+      background-color: white;
+      letter-spacing: 10px;
+    }
+
+    &-button {
+      padding: 0;
+      margin: 0 20px;
+      border: none;
+      border-radius: 0;
+      color: #4c4cfd;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: white;
+    }
+  }
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 30px;
+
+  button {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #4e46b4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #e0e4ff;
+  }
+
+  &__clear-button,
+  &__delete-button {
+    color: #4c4cfd;
+  }
+}
+
+.continue {
+  background-color: #3448f0;
+  color: white;
+  border: none;
+  padding: 30px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  :hover {
+    background-color: #3b3bda;
+  }
+}
